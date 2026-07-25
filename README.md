@@ -1,36 +1,206 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+ Project LOOP – AI-Powered Customer Feedback Intelligence Platform
 
-## Getting Started
+Project LOOP is an AI-powered SaaS platform designed to help organizations collect, organize, analyze, and understand customer feedback. The application leverages Artificial Intelligence to perform sentiment analysis, identify key themes, generate executive summaries, and provide actionable business insights through an interactive dashboard.
 
-First, run the development server:
 
-```bash
+
+ Features
+
+ Secure User Authentication
+ Multi-Workspace Support
+ Customer Feedback Management
+ AI-Based Sentiment Analysis
+ Automatic Theme Detection
+ Interactive Dashboard
+ Ask LOOP AI Assistant
+ AI-Powered Report Generation
+ Business Insights & Recommendations
+ Search and Filter Feedback
+ Fully Responsive Design
+
+
+
+ Tech Stack
+
+Frontend
+- Next.js 16
+- React
+- TypeScript
+- Tailwind CSS
+
+ Backend
+- Next.js API Routes
+- Prisma ORM
+- PostgreSQL
+
+ Artificial Intelligence
+- Groq API
+- Llama 3.3 70B Versatile
+
+Authentication
+- NextAuth (Auth.js)
+
+Deployment
+- Vercel
+
+
+
+Project Structure
+
+
+project-loop/
+│
+├── app/
+├── components/
+├── lib/
+├── prisma/
+├── public/
+├── styles/
+├── package.json
+└── README.md
+
+
+
+Installation
+Clone the repository
+
+bash
+git clone https://github.com/Keerjohnny/project-loop-ai-powered-customer-feedback-intelligence-platform.git
+
+
+ Navigate to the project
+
+bash
+cd project-loop-ai-powered-customer-feedback-intelligence-platform
+
+ Install dependencies
+
+bash
+npm install
+
+
+Configure Environment Variables
+
+Create a `.env` file and add the following:
+
+env
+DATABASE_URL=
+
+DIRECT_URL=
+
+AUTH_SECRET=
+
+GROQ_API_KEY=
+
+GROQ_MODEL=llama-3.3-70b-versatile
+
+
+ Generate Prisma Client
+
+bash
+npx prisma generate
+
+
+ Run Database Migration
+
+bash
+npx prisma migrate dev
+
+
+ Start Development Server
+
+bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## Learn More
+ Deployment
 
-To learn more about Next.js, take a look at the following resources:
+The application is deployed using Vercel
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+To deploy:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. Push the project to GitHub.
+2. Import the repository into Vercel.
+3. Add the required environment variables.
+4. Deploy the project.
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+AI Features
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Sentiment Analysis
+- Theme Detection
+- Customer Feedback Summarization
+- Executive Insights
+- Business Recommendations
+- Customer Pain Point Analysis
+- Trend Analysis
+- AI Report Generation
+
+
+
+Workflow
+
+
+Customer Feedback
+        │
+        ▼
+Store in PostgreSQL
+        │
+        ▼
+AI Analysis (Groq)
+        │
+        ├── Sentiment Analysis
+        ├── Theme Detection
+        ├── Summary Generation
+        └── Business Recommendations
+        │
+        ▼
+Interactive Dashboard
+        │
+        ▼
+Business Decision Making
+
+
+
+
+ Screenshots
+
+- Landing Page
+- Sign In Page
+- Dashboard
+- Feedback Management
+- Reports
+- Ask LOOP AI
+- Analytics Dashboard
+
+
+
+Future Enhancements
+
+- Real-Time Analytics
+- Email Integration
+- Voice Feedback Analysis
+- Multi-Language Support
+- Predictive Analytics
+- Team Collaboration
+- Advanced AI Models
+- Notification System
+
+
+ Author
+
+Keerthana Y 
+
+MCA Student
+
+AI & Full Stack Developer
+
+
+
+
+
+License
+
+This project is developed for educational and internship purposes.
